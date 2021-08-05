@@ -1,6 +1,6 @@
 @import "mixin";
 .social-links {
-    display: block;
+    display: block !important;
     div {
         @include flex(flex-start);
         font-size: 1rem;
