@@ -1,0 +1,9 @@
+@import "mixin";
+.followname {
+    @include flex(flex-start);
+    .name {
+        h1 {
+            font-size: clamp(.4rem, 2vw, 1rem);
+        }
+    }
+}

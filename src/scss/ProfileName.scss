@@ -1,0 +1,33 @@
+@import "mixin";
+.profilename {
+    @include flex(flex-start, flex-start);
+    margin: 1rem 0;
+    
+    .name {
+
+        h1 {
+            font-size: clamp(1rem, 5vw, 2.5rem);
+        }
+        div {
+            @include flex(flex-start);
+
+            font-size: clamp(.5rem, 3vw, 1rem);
+            font-weight: bold;
+
+            text-decoration: underline;
+            cursor: pointer;
+
+            margin: .5rem 0;
+
+            * {
+                margin-right: 50px;
+            }
+        }
+    }
+
+    @media (max-width: 500px) {
+        img {
+            width: 20%;
+        }
+    }
+}

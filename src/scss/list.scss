@@ -1,0 +1,6 @@
+@import "mixin";
+.followercard {
+    .followerhead {
+        @include flex(space-between);
+    }
+}

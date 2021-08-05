@@ -1,0 +1,33 @@
+.btn {
+    padding: .6rem 2rem;
+    margin: 5px 2px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #161B22;
+    color: white;
+
+    transition: all 200ms;
+
+    &:active {
+        background-color: white;
+        color: black;
+    }
+}
+
+.btns {
+    @include flex();
+    flex-wrap: wrap;
+    .btn {
+        max-width: 200px;
+        min-width: 150px;
+    }
+
+}
+
+a {
+    display: inline-block;
+    text-align: center;
+    color: #000;
+}

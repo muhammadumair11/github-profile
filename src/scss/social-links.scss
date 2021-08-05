@@ -1,0 +1,16 @@
+@import "mixin";
+.social-links {
+    div {
+        @include flex(flex-start);
+        font-size: 1rem;
+        font-weight: bold;
+        margin: .7rem 0;
+        
+        div {
+            margin: 3px 10px;
+            &.twitter, &.blog {
+                text-decoration: underline;
+            }
+        }
+    }
+}
